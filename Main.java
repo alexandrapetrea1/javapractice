@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         int[] grades = {29, 37, 38, 41, 84, 67};
@@ -22,5 +23,27 @@ public class Main {
         System.out.println("Minimum number: " + aufgabe2.findMin(numbers));
         System.out.println("Maximum sum of n-1 numbers: " + aufgabe2.findMaxSum(numbers));
         System.out.println("Minimum sum of n-1 numbers: " + aufgabe2.findMinSum(numbers));
+        Aufgabe3 aufgabe3 = new Aufgabe3();
+
+        int[] num1 = {1, 3, 0, 0, 0, 0, 0, 0, 0, 0};
+        int[] num2 = {8, 7, 0, 0, 0, 0, 0, 0, 0, 0};
+
+        // Test sum
+        System.out.println("Sum: " + Arrays.toString(aufgabe3.sum(num1, num2)));
+
+        // Test difference
+        int[] num3 = {8, 3, 0, 0, 0, 0, 0, 0, 0, 0};
+        int[] num4 = {5, 4, 0, 0, 0, 0, 0, 0, 0, 0};
+        System.out.println("Difference: " + Arrays.toString(aufgabe3.difference(num3, num4)));
+
+        // Test multiplication by a single digit
+        int[] num5 = {2, 3, 6, 0, 0, 0, 0, 0};
+        int digit = 2;
+        System.out.println("Multiplication: " + Arrays.toString(aufgabe3.MultiplyBySingleDigit(num5, digit)));
+
+        // Test division by a single digit
+        int[] num6 = {2, 3, 6, 0, 0, 0, 0, 0};
+        int divisor = 2;
+        System.out.println("Division: " + Arrays.toString(aufgabe3.divideBySingleDigit(num6, divisor)));
     }
 }
