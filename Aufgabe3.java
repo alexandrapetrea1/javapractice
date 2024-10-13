@@ -4,7 +4,7 @@ public class Aufgabe3 {
     public int[] sum(int[] num1, int[] num2){
         int[] result = new int[num1.length];
         int carry = 0;
-        for(int i = num1.length - 1;i >= 0; i--){
+        for(int i = num1.length - 1; i >= 0; i--){
             int sum = num1[i] + num2[i] + carry;
             result[i] = sum % 10;
             carry = sum / 10;
