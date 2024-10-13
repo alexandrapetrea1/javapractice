@@ -10,5 +10,6 @@ public class Main {
         }
         System.out.println();
         System.out.println("Maximum rounded grade: " + aufgabe1.getMax(grades));
+
     }
 }
